@@ -1,7 +1,6 @@
 [user]
-	name = liufengxia
-	email = yomingyo@gmail.com
-	emil = 18749620739@163.com
+	name = Peng Tao
+	email = ipengtaoxx@gmail.com
 [alias]
 	st = status
 	ci = commit
@@ -13,3 +12,9 @@
 	last = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit -1 HEAD
 [core]
 	editor = vim
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
